@@ -1,0 +1,84 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.main-container{
+    width: 70%;
+    height: 60%;
+    background-color: rgb(238, 236, 236);
+    margin: 10% auto;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+    font-family: poppins;
+
+}
+.buttons-div{
+    display: flex;
+    flex-direction: column;
+    min-height: max-content;
+    width: max-content;
+    background-color: #fff;
+    gap: 20px;
+}
+.buttons-div i{
+    font-size: 1.4rem;
+}
+.buttons-div div{
+    border: 2px solid ;
+    width: max-content;
+    padding: 5px;
+    border-radius: 30%;
+}
+.card-stack .card{
+    background-color: rgb(197, 197, 194);
+    width: 300px;
+    height: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    border-radius: 10px;
+}
+.card-stack .card .middle{
+    display: flex;
+    justify-content: space-between;
+}
+.card .middle p{
+    font-size: .7rem;
+    font-weight: 700;
+}
+.card-stack .card .bottom{
+    display: flex;
+    gap: 10px;
+}
+.card-stack .card .bottom button{
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.card-stack .card img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.main-container .form-container{
+    width: 500px;
+    height: 600px;
+    position: absolute;
+    background-color: rgb(156, 158, 156);
+    padding: 20px;
+}
+#userForm lable{
+    display: block;
+    color: red;
+    border-radius: 10px;
+}
