@@ -1,32 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Todo App</title>
-    <style>
-        /* We'll add CSS later */
-    </style>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="app">
-        <h1>My Todos</h1>
-        
-        <!-- Input Section -->
-        <div class="input-section">
-            <input type="text" id="todoInput" placeholder="What needs to be done?">
-            <button id="addBtn">Add</button>
-        </div>
-        
-        <!-- Todo List -->
-        <ul id="todoList"></ul>
-        
-        <!-- Stats -->
-        <div class="stats">
-            <span id="totalTodos">0 items</span>
-            <button id="clearCompleted">Clear Completed</button>
-        </div>
-    </div>
-    
-    <script src="app.js"></script>
+
+  <div class="container">
+    <h2>Todo App</h2>
+
+    <input type="text" id="taskTitle" placeholder="Task title">
+    <textarea id="taskDetails" placeholder="Task details"></textarea>
+
+    <label>Task Color</label>
+    <input type="color" id="taskColor" value="#dfe6e9">
+
+    <button id="addBtn">Add Task</button>
+
+    <div id="taskList"></div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

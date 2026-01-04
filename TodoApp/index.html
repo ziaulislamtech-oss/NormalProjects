@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To do App</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="todo-app">
-        <h1>Todo App</h1>
-        <div>
-            <input type="text" placeholder="Add Task" id="todo-input">
-            <button id="addTask">Add Task</button>
-            <button id="removeTask">Delete</button>
+    <div class="main">
+        <h1>To Do App</h1>
+        <div class="form">
+            <form >
+                <input type="text" placeholder="Enter Task">
+                <textarea name="" id="details" placeholder="Enter Details"></textarea>
+                <input type="color" id="tskBgColor" value="#f1f2f6">
+                <button id="addTskBtn">Add Task</button>
+            </form>
+            <div class="allTasks">
+                <div class="task">
+                    <h2>play Cricket <span>imp</span></h2>
+                   <div class="btns">
+                     <button>Details</button>
+                    <button>Completed</button>
+                   </div>
+                    <div class="taskDetails">
+                        <p>get up early and go to ground</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="todo-list">
-
-        </div>
-
-        <script src="script.js"></script>
+    </div>
+    <script src="script.js"></script>
 </body>
-
 </html>
