@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Todo App V2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <h1>📝 My Todo App</h1>
+            <p>Get things done, one task at a time</p>
+        </header>
+
+        <!-- INPUT FORM -->
+        <div class="input-section">
+            <form id="taskForm">
+                <div class="form-group">
+                    <input type="text" id="taskInput" 
+                           placeholder="Enter task title..." 
+                           required>
+                </div>
+                <div class="form-group">
+                    <textarea id="taskDetails" 
+                              placeholder="Task details (optional)"
+                              rows="2"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Priority:</label>
+                    <select id="priority">
+                        <option value="low">Low</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+                <button type="submit" id="addBtn">➕ Add Task</button>
+            </form>
+        </div>
+
+        <!-- TASKS LIST -->
+        <div class="tasks-container">
+            <h2>Your Tasks (<span id="taskCount">0</span>)</h2>
+            <div id="tasksList">
+                <!-- Tasks will appear here -->
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>Made with ❤️ by [Your Name]</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

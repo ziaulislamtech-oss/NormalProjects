@@ -6,6 +6,7 @@
 html,body{
     width: 100%;
     height: 100%;
+    background-color: black;
 }
 .main{
     width: 80%;
@@ -82,14 +83,31 @@ html,body{
     /* border: none; */
     font-size: .8rem;
 }
-.main .form .allTasks .task .taskDetails{
-    display: none;
-    transition: all ease 0.3s;
-    position: absolute;
-    inset: auto 0 -35px auto;
-    padding: 9px;
+/* CSS mein ye additions karein */
+.allTasks .taskDetails {
     width: 100%;
-    background-color: yellow;
+    background-color: gray;
+    max-height: 0;  /* IMPORTANT: Initially 0 */
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    padding: 0 15px; /* Add padding for smooth transition */
+}
+
+.taskDetails.open {
+    max-height: 200px; /* Fixed height ya fir max-content */
+    padding: 15px; /* Padding open state mein */
+}
+
+.taskDetails p {
+    margin: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease 0.2s, transform 0.3s ease 0.2s;
+}
+
+.taskDetails.open p {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .main .form .allTasks .task span{
