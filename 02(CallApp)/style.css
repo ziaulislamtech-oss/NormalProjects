@@ -1,0 +1,124 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    /* overflow: auto; */
+}
+body{
+    background-color: #e1e1e1;
+}
+.main-container{
+    width: 70%;
+    height: 60%;
+    /* background-color: #E2DADA; */
+    margin: 10% auto;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+    font-family: poppins;
+
+}
+.buttons-div{
+    display: flex;
+    flex-direction: column;
+    min-height: max-content;
+    width: max-content;
+    background-color: #ffffff;
+    gap: 20px;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 2px gray;
+}
+.buttons-div i{
+    font-size: 1.4rem;
+    background-color: transparent;
+}
+.buttons-div div{
+    border: 2px solid transparent;
+    width: max-content;
+    box-shadow: -2px -2px 5px 2px gray;
+    padding: 5px;
+    border-radius: 30%;
+    background-color: white;
+
+}
+.card-stack .card{
+    background-color: white;
+     box-shadow: 2px 5px 10px 5px gray;
+    width: 300px;
+    height: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    border-radius: 10px;
+}
+.card-stack .card .middle{
+    display: flex;
+    justify-content: space-between;
+}
+.card .middle p{
+    font-size: .7rem;
+    font-weight: 700;
+}
+.card-stack .card .bottom{
+    display: flex;
+    gap: 10px;
+}
+.card-stack .card .bottom button{
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.card-stack .card img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.main-container .form-container{
+    width: 500px;
+    min-height: max-content;
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+    display: none;
+    border-radius: 10px;
+
+}
+#userForm input:nth-child(n+2){
+    width: 80%;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid transparent ;
+    box-shadow: inset 1px 1px 5px 1px #ffffff;
+    background-color: #F7F7F7;
+
+}
+#userForm #buttons{
+    display: flex;
+    /* background-color: red; */
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+#userForm #buttons button{
+    border: none;
+    padding: 10px 0;
+    background-color: rgb(0, 204, 255);
+    border-radius: 10px;
+}
+#userForm #buttons button:nth-child(2){
+    color: white;
+    background-color: rgb(255, 97, 97);
+}
+#userForm lable{
+    display: block;
+    color: red;
+    border-radius: 10px;
+}

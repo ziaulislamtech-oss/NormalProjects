@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Kanban Board</h1> <button class="addNewTaskBtn">Add new task</button>
+        </header>
+        <div class="board">
+            <div class="overlay hidden" id="overlay">
+                <div class="modal">
+
+                    <h2>Create New Task</h2>
+
+                    <input type="text" id="taskTitle" placeholder="Task title">
+
+                    <textarea id="taskDesc" placeholder="Task description"></textarea>
+
+                    <div class="actions">
+                        <button id="cancelBtn">Cancel</button>
+                        <button id="createBtn">Create</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="column " id="todo">
+                <div class="top">
+                    <div class="left">
+                        <p>Todo</p>
+                    </div>
+                    <div class="right">
+                        <p class="count">0</p>
+                    </div>
+                </div>
+                <div class="allTasks">
+                    
+                </div>
+            </div>
+            <div class="column" id='progress'>
+                <div class="top">
+                    <div class="left">
+                        <p>In Progress</p>
+                    </div>
+                    <div class="right">
+                        <p class="count">2</p>
+                    </div>
+                </div>
+                <div class="allTasks">
+
+                </div>
+            </div>
+            <div class="column" id="done">
+                <div class="top">
+                    <div class="left">
+                        <p>Done</p>
+                    </div>
+                    <div class="right">
+                        <p class="count">4</p>
+                    </div>
+                </div>
+                <div class="allTasks">
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

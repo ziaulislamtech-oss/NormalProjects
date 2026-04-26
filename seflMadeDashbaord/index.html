@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+</head>
+
+<body>
+    <section class="main">
+        <header>
+            <nav>
+                <h3>Dashboard</h3> <button class="change-theam">change theam</button>
+            </nav>
+            <div class="weather">
+                <div class="weather-left">
+                    <h3>11 Februry,2026</h3>
+                    <h2>Wednesday, 05:29:57 PM</h2>
+                    <h3>Peshawar</h3>
+                </div>
+                <div class="weather-right">
+                    <img src="./icons/cloudy.png" alt="">
+                    <h2>22.2°C</h2>
+                    <h3>Mist</h3>
+                    <div class="hide">
+                        <p>Heat Index : <span>22.6%</span></p>
+                        <p>Humidity : <span>35%</span></p>
+                        <p>Wind : <span>5.8km/h</span></p>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <div class="apps">
+            <div class="left">
+                <div class="todo-app app"><h2><i class="ri-todo-fill"></i>Todo</h2></div>
+                <div class="daily-planner app"><h2>Daily Planner</h2></div>
+            </div>
+            <div class="right">
+                <div class="motivaiton app"><h2>Motivaiton</h2></div>
+                <div class="pomodorro app"><h2>Pomodorro Timer</h2></div>
+            </div>
+        </div>
+    </section>
+    <section class="all-features">
+        <div class="todo-full-page  fullpage">
+            <button class="back">close</button>
+            <h2>Todo Full-page</h2>
+            <div class="wrapper">
+                <div class="left">
+                <form >
+                    <input type="text" placeholder="Enter Task">
+                    <textarea name="" id="" placeholder="Task Details"></textarea>
+                   <div class="check-box">
+                       <input type="checkbox">
+                       <label for="check">Mark as important</label>
+                   </div>
+                    <button>submit</button>
+                </form>
+            </div>
+            <div class="right"></div>
+            </div>
+        </div>
+        <div class="motivation-full-page fullpage">
+            <button class="back">close</button>
+            <h2>Motivaiton Full-page</h2>
+        </div>
+        <div class="daily-planner-full-page fullpage">
+            <button class="back">close</button>
+            <h2>Daily Planner Full-page</h2>
+        </div>
+        <div class="pomotorro-timer-full-page fullpage">
+            <button class="back">close</button>
+            <h2>Pomodorro timer Full-page</h2>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

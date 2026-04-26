@@ -1,0 +1,289 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+:root {
+
+    /* Background colors */
+    --pri-bg-color: #eddc91;
+    --sec-bg-color: #91d9ed;
+    --tri-bg-color: #ED91B4;
+
+    /* shadow colors */
+    --pri-shadow-col: #cebf7e;
+    --sec-shadow-col: #fff9a4;
+
+    /* text colors */
+    --pri-text-color: #330033;
+
+    /* padding size */
+    --padding-sm: 10px;
+    --padding-lg: 20px;
+    --padding-xl: 28px;
+
+
+
+}
+
+/*  --------------------Mobile Approach---------------------- */
+
+section.main {
+    width: 100%;
+    height: 100%;
+    background: var(--pri-bg-color);
+    color: var(--pri-text-color);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+section.main header {
+
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: var(--pri-bg-color);
+
+
+
+}
+
+
+
+section.main header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px var(--pri-shadow-col),
+        -5px -5px 10px var(--sec-shadow-col);
+    background: linear-gradient(168deg, var(--pri-bg-color) 0%, var(--sec-bg-color) 51%, var(--tri-bg-color) 100%);
+
+}
+
+section.main header nav button.change-theam {
+
+    --width: 150px;
+    --timing: 2s;
+    border: 0;
+    width: var(--width);
+    padding-block: 1em;
+    font-weight: bold;
+    color: var(--pri-text-color);
+    font-size: 1em;
+    background-color: var(--pri-bg-color);
+    transition: all 0.2s;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px var(--pri-shadow-col),
+        -5px -5px 10px var(--sec-shadow-col);
+    border-radius: 30px;
+}
+
+section.main header nav button.change-theam:hover {
+    color: white;
+    background-image: linear-gradient(to right,
+            rgb(250, 82, 82),
+            rgb(250, 82, 82) 16.65%,
+            rgb(190, 75, 219) 16.65%,
+            rgb(190, 75, 219) 33.3%,
+            rgb(76, 110, 245) 33.3%,
+            rgb(76, 110, 245) 49.95%,
+            rgb(64, 192, 87) 49.95%,
+            rgb(64, 192, 87) 66.6%,
+            rgb(250, 176, 5) 66.6%,
+            rgb(250, 176, 5) 83.25%,
+            rgb(253, 126, 20) 83.25%,
+            rgb(253, 126, 20) 100%,
+            rgb(250, 82, 82) 100%);
+    animation: var(--timing) linear dance6123 infinite;
+    transform: scale(1.1) translateY(-1px);
+}
+
+@keyframes dance6123 {
+    to {
+        background-position: var(--width);
+    }
+}
+
+
+
+section.main .weather {
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding-lg);
+    min-height: 200px;
+    border-radius: 50px;
+    border-radius: 50px;
+    box-shadow: 9px 9px 19px var(--pri-shadow-col),
+        -9px -9px 19px var(--sec-shadow-col);
+    background: linear-gradient(168deg, var(--pri-bg-color) 0%, var(--sec-bg-color) 51%, var(--tri-bg-color) 100%);
+
+}
+
+section.main .weather .weather-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    /* white-space: nowrap; */
+}
+
+section.main .weather .weather-left img {
+    max-width: 100px;
+}
+
+section.main .weather .weather-right {
+    justify-self: end;
+    align-self: flex-end;
+    padding: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+section.main .apps {
+    min-width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    /* min-height: 1; */
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+section.main .apps .left,
+.right {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+section.main .apps .app {
+    cursor: pointer;
+    border-radius: 40px;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: var(--pri-bg-color);
+    box-shadow: 9px 9px 19px var(--pri-shadow-col),
+        -9px -9px 19px var(--sec-shadow-col);
+}
+
+/* Features Section coding start */
+section.all-features {
+
+    /* position: relative; */
+}
+
+section.all-features .fullpage {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--pri-bg-color);
+    display: none;
+}
+
+.fullpage .back {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    padding: 10px 15px;
+    background-color: var(--sec-bg-color);
+    font-size: 1.3rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all ease .9s;
+}
+
+.fullpage .back:active {
+    scale: .97;
+
+}
+
+/*   ==================== ToDo List full-page Coding starts========================= */
+section.all-features .todo-full-page {
+    display: block;
+
+}
+
+section.all-features .todo-full-page .wrapper {
+    display: flex;
+    /* gap: 20%; */
+    background-color: #fff;
+    width: 100%;
+    height: 80%;
+}
+
+section.all-features .todo-full-page .wrapper .left {
+    /* flex-grow: 1; */
+    flex-basis: 50%;
+    background-color: var(--tri-bg-color);
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
+section.all-features .todo-full-page .wrapper .left form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    padding: 20px;
+    width: 60%;
+
+}
+
+section.all-features .todo-full-page .wrapper .left form .check-box {
+    display: flex;
+    white-space: nowrap;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+section.all-features .todo-full-page .wrapper .left form input {
+    width: 100%;
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+
+  background: #ED91B4;
+  box-shadow: inset 2px 2px 3px #d583a2,
+            inset -3px -2px 3px #ffa0c6;
+
+
+}
+
+section.all-features .todo-full-page .wrapper .left form textarea {
+    min-width: 100%;
+    min-height: 250px;
+}
+
+section.all-features .todo-full-page .wrapper .left form button {
+    width: 100%;
+    padding: 10px 20px;
+
+}
+
+section.all-features .todo-full-page .wrapper .right {
+    flex-basis: 50%;
+    background-color: green;
+}
