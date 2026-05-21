@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+/* WINDOW OPEN ANIMATION: Mimics macOS window launch —
+   scales up from 90% and fades in smoothly */
+@keyframes windowOpen {
+    from {
+        opacity: 0;
+        transform: scale(0.92);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* WINDOW CLOSE ANIMATION: Scales down and fades out
+   when a window is closed */
+@keyframes windowClose {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.92);
+    }
+}
+
+.window-open {
+    animation: windowOpen 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* DOCK TOOLTIP ANIMATION: Fade in + slight upward slide
+   for the app name label above dock icons.
+   The tooltip uses absolute + -top-10 + left-1/2 -translate-x-1/2,
+   so the animation must preserve both translateX(-50%) for centering
+   and add the upward fade-in translateY effect. */
+@keyframes tooltipFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+.dock-tooltip {
+    animation: tooltipFadeIn 0.15s ease-out forwards;
+}
+
+/* Sleek project scrollbar for the Resume window */
+.resume-scrollbar {
+	/* Firefox */
+	scrollbar-width: thin;
+	scrollbar-color: rgba(156,163,175,0.9) rgba(11,11,11,0.6);
+}
+
+/* WebKit browsers (Chrome, Edge, Safari) */
+.resume-scrollbar::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+.resume-scrollbar::-webkit-scrollbar-track {
+	background: rgba(11,11,11,0.45);
+	border-radius: 9999px;
+	margin: 6px 0;
+}
+.resume-scrollbar::-webkit-scrollbar-thumb {
+	background: linear-gradient(180deg, rgba(99,102,241,0.95), rgba(59,130,246,0.9));
+	border-radius: 9999px;
+	border: 2px solid rgba(11,11,11,0.45);
+	box-shadow: inset 0 0 0 1px rgba(255,255,255,0.04);
+}
+.resume-scrollbar::-webkit-scrollbar-thumb:hover {
+	filter: brightness(1.08);
+}
+.resume-scrollbar::-webkit-scrollbar-corner {
+	background: transparent;
+}
+
+/* Subtle focus state so the scrollbar stands out when user interacts */
+.resume-scrollbar:focus-within::-webkit-scrollbar-thumb {
+	background: linear-gradient(180deg, rgba(124,58,237,1), rgba(59,130,246,1));
+}
+
+/* Note: PDF viewers inside an iframe often render their own scrollbars which cannot be styled from the parent page.
+	 To fully control the scrollbar appearance for PDF content, render the PDF with PDF.js into a scrollable div.
+*/

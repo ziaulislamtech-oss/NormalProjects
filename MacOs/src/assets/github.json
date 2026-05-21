@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=1000",
+    "title": "DevConnect - Developer Social Platform",
+    "description": "A modern social platform for developers to share projects, write blogs, and collaborate in real time.",
+    "tags": [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Socket.io",
+      "Tailwind CSS"
+    ],
+    "repoLink": "https://github.com/socketio/socket.io",
+    "demoLink": "https://socket.io/"
+  },
+  {
+    "id": 2,
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=1000",
+    "title": "TaskFlow - Team Productivity Manager",
+    "description": "A kanban-style productivity application designed for teams to manage tasks, deadlines, and workflows efficiently.",
+    "tags": [
+      "Next.js",
+      "TypeScript",
+      "Prisma",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "Vercel"
+    ],
+    "repoLink": "https://github.com/vercel/next.js",
+    "demoLink": "https://nextjs.org/"
+  },
+  {
+    "id": 3,
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=1000",
+    "title": "ShopEase - E-commerce Store",
+    "description": "A full-featured e-commerce web app with product filtering, secure checkout, and admin dashboard support.",
+    "tags": [
+      "React",
+      "Redux Toolkit",
+      "Stripe",
+      "Firebase",
+      "SCSS"
+    ],
+    "repoLink": "https://github.com/reduxjs/redux-toolkit",
+    "demoLink": "https://stripe.com/"
+  },
+  {
+    "id": 4,
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1000",
+    "title": "CodeSync - Online Code Editor",
+    "description": "A collaborative online code editor supporting live editing, syntax highlighting, and multi-user sessions.",
+    "tags": [
+      "React",
+      "Monaco Editor",
+      "WebSockets",
+      "Node.js",
+      "Docker"
+    ],
+    "repoLink": "https://github.com/microsoft/monaco-editor",
+    "demoLink": "https://microsoft.github.io/monaco-editor/"
+  },
+  {
+    "id": 5,
+    "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=1000",
+    "title": "WeatherSphere - Smart Weather Dashboard",
+    "description": "A responsive weather dashboard providing real-time forecasts, maps, and climate analytics using public APIs.",
+    "tags": [
+      "Vue.js",
+      "OpenWeather API",
+      "Chart.js",
+      "Tailwind CSS"
+    ],
+    "repoLink": "https://github.com/chartjs/Chart.js",
+    "demoLink": "https://www.chartjs.org/"
+  },
+  {
+    "id": 6,
+    "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=1000",
+    "title": "LearnHub - Online Learning Platform",
+    "description": "An educational platform where instructors can upload courses and students can track progress and certifications.",
+    "tags": [
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "Bootstrap",
+      "REST API"
+    ],
+    "repoLink": "https://github.com/laravel/laravel",
+    "demoLink": "https://laravel.com/"
+  }
+]
